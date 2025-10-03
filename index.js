@@ -32,9 +32,22 @@ async function generarPokemon(e) {
             document.getElementById("audio-pokemon-latest").src = cries.latest
             document.getElementById("audio-pokemon-legacy").src = cries.legacy
 
-            pokemon.style.display = "flex"
         })
-        .catch((e) => {
-            console.error(`oh no hubo un error :-( => ${e}`)
+        .catch(e => {
+            console.error(`Hubo un error inesperado: ${e}`)
         })
+    
+    fetch(`https://pokeapi.co/api/v2/pokemon-species/${pokemonInput.value}`)
+        .then(res => res.json())
+        .then(data => {
+            document.querySelector("main").style.backgroundColor = data.color.name
+            document.querySelectorAll("th").forEach(e => {
+                e.style.backgroundColor = data.color.name
+            })
+        })
+        .catch(e => {
+            console.error(`Hubo un error inesperado: ${e}`)
+        })
+
+    pokemon.style.display = "flex"
 }
