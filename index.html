@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link rel="stylesheet" type="text/css" href="styles.css">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pokemon</title>
+    <script src="index.js"></script>
+</head>
+<body>
+    <main>
+        <div>
+            <input type="text" id="pokemonInput">
+            <button>Buscar</button>
+        </div>
+        <div id="pokemon">
+            <h1><span id="nombrePokemon"></span></h1>
+            <div id="imagenesPokemon">
+                <img id="imagenPokemon" class="sprite-pokemon" src="">
+                <img id="imagenPokemonShiny" class="sprite-pokemon" src="">
+            </div>
+            <h2>Estadísticas</h2>
+            <table>
+                <thead>
+                    <tr>
+                        <th>Estadística</th>
+                        <th>Valor</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>Vida</td>
+                        <td id="estadistica-vida"></td>
+                    </tr>
+                    <tr>
+                        <td>Ataque</td>
+                        <td id="estadistica-ataque"></td>
+                    </tr>
+                    <tr>
+                        <td>Ataque especial</td>
+                        <td id="estadistica-ataque-especial"></td>
+                    </tr>
+                    <tr>
+                        <td>Defensa</td>
+                        <td id="estadistica-defensa"></td>
+                    </tr>
+                    <tr>
+                        <td>Defensa especial</td>
+                        <td id="estadistica-defensa-especial"></td>
+                    </tr>
+                    <tr>
+                        <td>Velocidad</td>
+                        <td id="estadistica-velocidad"></td>
+                    </tr>
+                </tbody>
+            </table>
+            <h2>Sonidos</h2>
+            <audio id="audio-pokemon-latest" controls></audio>
+            <audio id="audio-pokemon-legacy" controls></audio>
+        </div>
+    </main>
+</body>
+</html>
