@@ -46,6 +46,7 @@ async function generarPokemon(e) {
             })
         })
         .catch(e => {
+            alert("¡No ha sido encontrado el pokémon!")
             console.error(`Hubo un error inesperado: ${e}`)
         })
 
