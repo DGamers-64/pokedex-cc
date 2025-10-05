@@ -33,8 +33,11 @@ input, button {
 }
 
 .sprite-pokemon {
-    width: 128px;
-    image-rendering: pixelated;
+    width: 256px;
+}
+
+.estadistica {
+    text-align: center;
 }
 
 table, th, td {
@@ -58,4 +61,28 @@ table {
 #imagenesPokemon {
     display: flex;
     gap: 1rem;
+}
+
+#error {
+    background-color: white;
+    padding: 1rem;
+    width: 100%;
+    height: 100%;
+    border: 1px solid black;
+    display: none;
+    align-items: center;
+    justify-content: center;
+    font-size: 4em;
+}
+
+#bienvenida {
+    background-color: white;
+    padding: 1rem;
+    width: 100%;
+    height: 100%;
+    border: 1px solid black;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 4em;
 }
